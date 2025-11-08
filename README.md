@@ -1,2 +1,0 @@
-# pranav-interactivce-resume
- 
