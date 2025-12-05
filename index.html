@@ -108,7 +108,7 @@
         .project-showcase:hover .project-showcase-visual img,
         .project-showcase-visual:hover img {
             transform: scale(1.08) rotate(-0.35deg);
-            filter: grayscale(1) contrast(1.35) drop-shadow(0 12px 26px rgba(0,0,0,0.55));
+            filter: grayscale(0) contrast(1.1) drop-shadow(0 12px 26px rgba(0,0,0,0.55));
         }
         .project-showcase-visual::after {
             content: "";
@@ -527,15 +527,15 @@
                         <div class="project-showcase">
                             <div class="project-showcase-inner">
                                 <div class="project-showcase-visual">
-                                    <img src="assets/images/scorekeeper.png" alt="ScoreKeeper scoreboard interface">
-                                    <div class="project-showcase-overlay"><span style="color:#fff">ScoreKeeper</span></div>
+                                    <img src="assets/images/marketcrunch.png" alt="MarketCrunch Interface">
+                                    <div class="project-showcase-overlay"><span style="color:#fff"  >MarketCrunch</span></div>
                                 </div>
                                 <div class="project-showcase-details">
-                                    <p class="uppercase text-16 font-bold">Productivity / Gaming Utility</p>
-                                    <p class="uppercase text-16 font-bold">Next.js · TypeScript · Zustand · Tailwind</p>
-                                    <p>Minimalist scoreboard mirroring this site’s monochrome grid. Track multi-round scores, penalties, and modifiers with offline persistence.</p>
-                                    <p>Includes quick-add rosters, shareable summaries, and dark-mode friendly UI tuned for party games and tournaments.</p>
-                                    <a href="https://pranav-scorekeeper.vercel.app/" target="_blank" rel="noopener" class="project-showcase-link">View app</a>
+                                    <p class="uppercase text-16 font-bold">Fintech / AI Research</p>
+                                    <p class="uppercase text-16 font-bold">Next.js · LLM Agents · Tailwind</p>
+                                    <p>Advanced stock research platform powered by AI. Delivers institutional-grade analytics and predictive insights to retail investors.</p>
+                                    <p>Combines real-time market data with autonomous research agents to identify high-potential investment opportunities.</p>
+                                    <a href="https://marketcrunch-clone.vercel.app/" target="_blank" rel="noopener" class="project-showcase-link">Visit site</a>
                                 </div>
                             </div>
                         </div>
@@ -546,15 +546,15 @@
                         <div class="project-showcase -reverse">
                             <div class="project-showcase-inner">
                                 <div class="project-showcase-details">
-                                    <p class="uppercase text-16 font-bold">Commerce / Enterprise</p>
-                                    <p class="uppercase text-16 font-bold">Next.js · Shopify Headless · Stripe · Azure</p>
-                                    <p>B2B storefront for Microsoft licensing—tiered pricing, procurement approvals, and CRM automation presented in a stark, legible grid.</p>
-                                    <p>Guided upsells, partner logins, and compliance-ready invoices tightened SkySecure’s deal velocity.</p>
-                                    <a href="https://shop.skysecure.ai/" target="_blank" rel="noopener" class="project-showcase-link">Visit site</a>
+                                    <p class="uppercase text-16 font-bold">Corporate / Recruitment</p>
+                                    <p class="uppercase text-16 font-bold">Next.js · Tailwind · Framer Motion</p>
+                                    <p>A modern digital presence for a premier HR consultancy, streamlining talent acquisition and corporate training services.</p>
+                                    <p>Features dynamic service catalogs, client testimonials, and an integrated contact workflow for seamless client onboarding.</p>
+                                    <a href="https://hrconsultec.com/" target="_blank" rel="noopener" class="project-showcase-link">Visit site</a>
                                 </div>
                                 <div class="project-showcase-visual">
-                                    <img src="assets/images/skysecure.png" alt="SkySecure Shop storefront preview">
-                                    <div class="project-showcase-overlay"><span>SkySecure Shop</span></div>
+                                    <img src="assets/images/hrconsultec.png" alt="HR Consultec Interface">
+                                    <div class="project-showcase-overlay"><span style="color:#000000">HR Consultec</span></div>
                                 </div>
                             </div>
                         </div>
@@ -565,15 +565,53 @@
                         <div class="project-showcase">
                             <div class="project-showcase-inner">
                                 <div class="project-showcase-visual">
-                                    <img src="assets/images/ebook.png" alt="AudioBook Reader interface">
-                                    <div class="project-showcase-overlay"><span style="color:#fff">AudioBook Reader</span></div>
+                                    <img src="assets/images/skysecure.png" alt="SkySecure Shop storefront preview">
+                                    <div class="project-showcase-overlay"><span>SkySecure Shop</span></div>
                                 </div>
+                                <div class="project-showcase-details">
+                                    <p class="uppercase text-16 font-bold">Commerce / Enterprise</p>
+                                    <p class="uppercase text-16 font-bold">Next.js · Shopify Headless · Stripe · Azure</p>
+                                    <p>B2B storefront for Microsoft licensing—tiered pricing, procurement approvals, and CRM automation presented in a stark, legible grid.</p>
+                                    <p>Guided upsells, partner logins, and compliance-ready invoices tightened SkySecure’s deal velocity.</p>
+                                    <a href="https://qashop.skysecure.ai/" target="_blank" rel="noopener" class="project-showcase-link">Visit site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-10 lg:col-start-2">
+                        <div class="project-showcase -reverse">
+                            <div class="project-showcase-inner">
                                 <div class="project-showcase-details">
                                     <p class="uppercase text-16 font-bold">Reading Experience / Accessibility</p>
                                     <p class="uppercase text-16 font-bold">React · Node.js · MongoDB · Replit</p>
                                     <p>Unified e-book + audio experience that ingests PDFs, extracts chapters, and streams synchronized narration. Built to feel like a tactile reader but with cloud syncing and bookmarking.</p>
                                     <p>Features include smart pagination, listen/read handoff, adjustable playback voices, and Mongo-backed personal libraries so sessions resume seamlessly across devices.</p>
                                     <span class="project-showcase-link opacity-60 tracking-wide">Private build</span>
+                                </div>
+                                <div class="project-showcase-visual">
+                                    <img src="assets/images/ebook.png" alt="AudioBook Reader interface">
+                                    <div class="project-showcase-overlay"><span style="color:#fff">AudioBook Reader</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-10 lg:col-start-2">
+                        <div class="project-showcase">
+                            <div class="project-showcase-inner">
+                                <div class="project-showcase-visual">
+                                    <img src="assets/images/scorekeeper.png" alt="ScoreKeeper scoreboard interface">
+                                    <div class="project-showcase-overlay"><span style="color:#fff">ScoreKeeper</span></div>
+                                </div>
+                                <div class="project-showcase-details">
+                                    <p class="uppercase text-16 font-bold">Productivity / Gaming Utility</p>
+                                    <p class="uppercase text-16 font-bold">Next.js · TypeScript · Zustand · Tailwind</p>
+                                    <p>Minimalist scoreboard mirroring this site’s monochrome grid. Track multi-round scores, penalties, and modifiers with offline persistence.</p>
+                                    <p>Includes quick-add rosters, shareable summaries, and dark-mode friendly UI tuned for party games and tournaments.</p>
+                                    <a href="https://pranav-scorekeeper.vercel.app/" target="_blank" rel="noopener" class="project-showcase-link">View app</a>
                                 </div>
                             </div>
                         </div>
