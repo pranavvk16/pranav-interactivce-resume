@@ -188,6 +188,39 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
         }
+        /* Mobile Font Fixes and Layout Improvement */
+        @media (max-width: 768px) {
+            .intro-title {
+                font-size: 11vw !important; /* Slightly smaller for safer fit */
+                line-height: 1.1;
+                width: 100%;
+                padding: 0 1.5rem; /* Add breathing room on sides */
+                box-sizing: border-box;
+            }
+            
+            /* Override grid positioning to use full width and center text */
+            .intro-title .grid {
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center; /* Center align looks more balanced on mobile usually */
+            }
+
+            .intro-title-line {
+                 display: block;
+                 width: 100%;
+                 grid-column: 1 / -1 !important; /* Force full width span */
+                 margin-left: 0 !important;
+            }
+
+            .intro-title-line-inner {
+                display: inline-block; /* Ensure proper wrapping */
+            }
+
+            .brand-text {
+                font-size: 0.9rem !important;
+            }
+        }
     </style>
 </head>
 
@@ -309,19 +342,6 @@
         </div>
     </div>
     </div>
-    <div class="header">
-        <div class="header-inner">
-            <div class="brand w-full">
-                <div class="wrap">
-                    <h1 class="brand-text leading-md flex brand-text-glass"><span data-scroll-to="" class="cursor-pointer pointer-events-auto block"><span class="block"><span class="brand-text-line overflow-hidden"><span class="brand-text-line-inner">GrowFrom</span></span> <span class="brand-text-line overflow-hidden"><span class="brand-text-line-inner">Zero</span></span>
-                        <span class="brand-text-line overflow-hidden"><span class="brand-text-line-inner">Freelance Collective</span></span>
-                        </span>
-                        </span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="fixed h-full w-full top-0 left-0" data-component="example"></div>
     <section id="intro" class="intro" data-scroll-item>
         <div class="intro-inner">
@@ -366,7 +386,7 @@
             </a>
         </div>
     </section>
-    <section id="about" class="py-56 sm:py-40 lg:py-56 leading-default mt-0 sm:-mt-160 lg:mt-0" data-scroll-item>
+    <section id="about" class="py-56 sm:py-40 lg:py-56 leading-default mt-0 sm:mt-0 lg:mt-0" data-scroll-item>
         <div class="hidden lg:block absolute w-full top-0 pt-56">
             <div class="wrap">
                 <div class="gl-cone" data-parallax=".75"></div>
@@ -453,7 +473,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
-                    <div class="col-span-4 sm:col-span-6 lg:col-span-8">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-8 lg:col-start-2">
                         <article class="sm:text-18">
                             <p class="uppercase text-16 font-bold">Systems &amp; Product Leadership</p>
                             <h3 class="text-36 sm:text-48 lg:text-64 leading-none pt-16">Pranav V. K · Tech Lead &amp; Solution Architect</h3>
@@ -468,7 +488,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
-                    <div class="col-span-4 sm:col-span-6 lg:col-span-8">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-8 lg:col-start-5">
                         <article class="sm:text-18">
                             <p class="uppercase text-16 font-bold">Experience &amp; Mobile</p>
                             <h3 class="text-36 sm:text-48 lg:text-64 leading-none pt-16">Saurav S · Frontend &amp; Mobile Lead</h3>
@@ -483,7 +503,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
-                    <div class="col-span-4 sm:col-span-6 lg:col-span-8">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-8 lg:col-start-2">
                         <article class="sm:text-18">
                             <p class="uppercase text-16 font-bold">Security &amp; Risk</p>
                             <h3 class="text-36 sm:text-48 lg:text-64 leading-none pt-16">Gautham Rajesh · Cybersecurity Consultant</h3>
@@ -498,7 +518,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 col-gap-24 pt-48 sm:pt-96 lg:pt-160">
-                    <div class="col-span-4 sm:col-span-6 lg:col-span-8">
+                    <div class="col-span-4 sm:col-span-6 lg:col-span-8 lg:col-start-5">
                         <article class="sm:text-18">
                             <p class="uppercase text-16 font-bold">Extended Network</p>
                             <h3 class="text-36 sm:text-48 lg:text-64 leading-none pt-16">Trusted collaborators on call</h3>
